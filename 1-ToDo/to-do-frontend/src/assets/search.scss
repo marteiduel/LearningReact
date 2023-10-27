@@ -1,0 +1,26 @@
+/* Styles for the Search component */
+
+.container {
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  appearance: none;
+  font-size: 14px;
+}

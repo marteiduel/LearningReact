@@ -1,17 +1,26 @@
-import React from "react";
+import { useState, useEffect } from "react";
 
 function Search() {
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    fetch("/api/categories")
+      .then((res) => res.json())
+      .then((data) => setCategories(data));
+  });
+
   return (
-    <div>
+    <div className="container">
       <form action="/submit-url" method="post">
-        <label for="fruits">Choose a fruit:</label>
-        <select name="fruits" id="fruits">
+        <label className="label" htmlFor="fruits">
+          Choose a Category:{" "}
+        </label>
+        <select name="fruits" id="fruits" className="select">
           <option value="apple">Apple</option>
           <option value="banana">Banana</option>
           <option value="cherry">Cherry</option>
           <option value="date">Date</option>
         </select>
-        <input type="submit" value="Submit" />
       </form>
     </div>
   );
