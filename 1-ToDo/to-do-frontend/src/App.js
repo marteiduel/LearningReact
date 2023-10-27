@@ -1,6 +1,7 @@
 import Search from "./components/Search";
 import ToDoList from "./components/ToDoList";
-import "./App.css";
+import "./App.scss";
+import AddCategory from "./components/AddCategory";
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <main>
         <ToDoList />
       </main>
+      <footer>
+        <AddCategory />
+      </footer>
     </div>
   );
 }

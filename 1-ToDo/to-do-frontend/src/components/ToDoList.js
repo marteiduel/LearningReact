@@ -2,7 +2,7 @@ import React from "react";
 
 function ToDoList() {
   return (
-    <section>
+    <section className="ToDoTable">
       <h2>My To Do List</h2>
       <table>
         <thead>
