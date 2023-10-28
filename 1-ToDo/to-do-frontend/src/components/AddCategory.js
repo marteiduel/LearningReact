@@ -1,5 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 function AddCategory() {
-  return <div className="button">AddCategory</div>;
+  const navigate = useNavigate();
+  return <div onClick={() => navigate("/")}>Back</div>;
 }
 
 export default AddCategory;
