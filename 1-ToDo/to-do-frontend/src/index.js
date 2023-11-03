@@ -2,8 +2,8 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Layout from "./Layout";
-import "./App.scss";
 import AddCategory from "./components/AddCategory";
+import "./App.scss";
 
 export default function App() {
   return (
