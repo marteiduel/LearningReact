@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function Search() {
+function CategoriesHomePage() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -26,4 +26,4 @@ function Search() {
   );
 }
 
-export default Search;
+export default CategoriesHomePage;

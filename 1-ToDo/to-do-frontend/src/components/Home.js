@@ -1,11 +1,12 @@
-import Search from "./Search";
+// import CategoriesHomePage from "./CategoriesHomePage";
 import ToDoList from "./ToDoList";
+import AddToDo from "./AddToDo";
 
 function Home() {
   return (
     <div>
       <header>
-        <Search />
+        <AddToDo />
       </header>
       <main>
         <ToDoList />

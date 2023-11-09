@@ -5,14 +5,14 @@
   justify-content: space-evenly;
   min-height: 100vh;
   width: 100vw;
+  font-family: "Roboto", sans-serif;
 }
 
 body,
 html {
   margin: 0;
   padding: 0;
-  height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -28,9 +28,9 @@ footer {
 }
 
 main {
-  height: 60vh;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -59,7 +59,6 @@ main {
 }
 
 .container {
-  font-family: "Arial", sans-serif;
   padding: 20px;
   background-color: rgb(196, 196, 196);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -79,7 +78,7 @@ main {
   padding: 10px;
   border-radius: 5px;
   box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
+  border: 1px solid #a7a7a7a7;
   appearance: none;
   font-size: 14px;
 }
@@ -91,7 +90,6 @@ main {
 }
 
 .container {
-  font-family: "Arial", sans-serif;
   padding: 20px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -125,7 +123,7 @@ nav {
 }
 
 .nav-item {
-  border: 1.7px solid rgb(119, 119, 119);
+  border: 1.7px solid rgb(119, 119, 119, 0.34);
   border-radius: 12.5px;
   padding: 0.75rem;
   text-decoration: none;
@@ -134,6 +132,105 @@ nav {
 
 .active-nav-item {
   background-color: rgb(222, 222, 222);
+}
+
+.ToDoTable {
+  width: 80%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.ToDoTable h2 {
+  text-align: center;
+}
+
+.task {
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonsSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task button {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.task .completeButton {
+  background-color: #03a71e;
+  margin: 0 0 10px 0;
+}
+
+.task .unCompleteButton {
+  background-color: #032fa7;
+  margin: 0 0 10px 0;
+}
+
+.task button:hover {
+  opacity: 0.8;
+}
+
+.add-todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.add-todo-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-todo-container input[type="text"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-todo-container button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-todo-container button:hover,
+.add-todo-container button:focus {
+  background-color: #45a049;
+}
+
+.add-todo-container input[type="text"]:hover,
+.add-todo-container input[type="text"]:focus {
+  border-color: #4caf50;
 }
 
 @media screen and (max-width: 600px) {

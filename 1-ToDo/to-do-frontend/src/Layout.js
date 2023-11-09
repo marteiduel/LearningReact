@@ -3,7 +3,7 @@ import { NavLink, Outlet } from "react-router-dom";
 const Layout = () => {
   return (
     <>
-      <nav>
+      {/* <nav>
         <NavLink
           to="/"
           className={({ isActive }) =>
@@ -21,7 +21,7 @@ const Layout = () => {
         >
           Categories
         </NavLink>
-      </nav>
+      </nav> */}
       <Outlet />
     </>
   );
